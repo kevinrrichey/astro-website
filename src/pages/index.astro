@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Home - AstroSite" description="A modern, fast, and SEO-optimized website built with Astro and Tailwind CSS">
+	<Header />
+	
+	<!-- Hero Section -->
+	<main>
+		<section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+				<div class="text-center">
+					<h1 class="text-4xl md:text-6xl font-bold mb-6">
+						Welcome to the Future of Web Development
+					</h1>
+					<p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+						Experience lightning-fast websites built with Astro and Tailwind CSS. 
+						Zero JavaScript by default, maximum performance guaranteed.
+					</p>
+					<div class="flex flex-col sm:flex-row gap-4 justify-center">
+						<a href="/about" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+							Learn More
+						</a>
+						<a href="/contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+							Get Started
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section class="py-20 bg-white">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+						Why Choose Astro?
+					</h2>
+					<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+						Modern web development with cutting-edge performance and developer experience.
+					</p>
+				</div>
+				
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<!-- Feature 1 -->
+					<div class="text-center p-6">
+						<div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+							<svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-900 mb-2">Lightning Fast</h3>
+						<p class="text-gray-600">
+							Zero JavaScript by default means your site loads instantly. 
+							Only add interactivity where you need it.
+						</p>
+					</div>
+					
+					<!-- Feature 2 -->
+					<div class="text-center p-6">
+						<div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+							<svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-900 mb-2">SEO Optimized</h3>
+						<p class="text-gray-600">
+							Server-side rendering out of the box ensures your content 
+							is discoverable by search engines.
+						</p>
+					</div>
+					
+					<!-- Feature 3 -->
+					<div class="text-center p-6">
+						<div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+							<svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-900 mb-2">Developer Friendly</h3>
+						<p class="text-gray-600">
+							Use your favorite frameworks when needed. React, Vue, Svelte - 
+							all work seamlessly with Astro.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="bg-gray-900 text-white py-20">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+				<h2 class="text-3xl md:text-4xl font-bold mb-4">
+					Ready to Build Something Amazing?
+				</h2>
+				<p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+					Join thousands of developers who are already building faster, 
+					better websites with Astro.
+				</p>
+				<a href="/contact" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block">
+					Start Your Project
+				</a>
+			</div>
+		</section>
+	</main>
+	
+	<Footer />
+</Layout>

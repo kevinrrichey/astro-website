@@ -1,0 +1,147 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="About - AstroSite" description="Learn more about our mission and the technology behind our modern web solutions">
+	<Header />
+	
+	<main>
+		<!-- Hero Section -->
+		<section class="bg-gray-50 py-20">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center">
+					<h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+						About AstroSite
+					</h1>
+					<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+						We're passionate about building fast, modern websites that deliver 
+						exceptional user experiences using cutting-edge technology.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Mission Section -->
+		<section class="py-20 bg-white">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+					<div>
+						<h2 class="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
+						<p class="text-lg text-gray-600 mb-6">
+							We believe that web development should be fast, efficient, and accessible to everyone. 
+							Our mission is to create websites that not only look great but also perform exceptionally 
+							well across all devices and platforms.
+						</p>
+						<p class="text-lg text-gray-600">
+							By leveraging modern technologies like Astro and Tailwind CSS, we're able to deliver 
+							websites that load instantly, rank well in search engines, and provide an outstanding 
+							user experience.
+						</p>
+					</div>
+					<div class="bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg p-8 text-white">
+						<h3 class="text-2xl font-bold mb-4">Why We Choose Astro</h3>
+						<ul class="space-y-3">
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+								</svg>
+								Zero JavaScript by default
+							</li>
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+								</svg>
+								Server-side rendering
+							</li>
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+								</svg>
+								Multi-framework support
+							</li>
+							<li class="flex items-center">
+								<svg class="w-5 h-5 text-green-300 mr-3" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+								</svg>
+								Built-in optimizations
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Team Section -->
+		<section class="py-20 bg-gray-50">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
+					<p class="text-xl text-gray-600">
+						Passionate developers dedicated to creating amazing web experiences
+					</p>
+				</div>
+				
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<!-- Team Member 1 -->
+					<div class="bg-white rounded-lg shadow-md p-6 text-center">
+						<div class="w-24 h-24 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+							<svg class="w-12 h-12 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-900 mb-2">Alex Johnson</h3>
+						<p class="text-blue-600 mb-2">Lead Developer</p>
+						<p class="text-gray-600">
+							Full-stack developer with 8+ years of experience in modern web technologies.
+						</p>
+					</div>
+					
+					<!-- Team Member 2 -->
+					<div class="bg-white rounded-lg shadow-md p-6 text-center">
+						<div class="w-24 h-24 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+							<svg class="w-12 h-12 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-900 mb-2">Sarah Chen</h3>
+						<p class="text-green-600 mb-2">UI/UX Designer</p>
+						<p class="text-gray-600">
+							Creative designer focused on user experience and modern interface design.
+						</p>
+					</div>
+					
+					<!-- Team Member 3 -->
+					<div class="bg-white rounded-lg shadow-md p-6 text-center">
+						<div class="w-24 h-24 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+							<svg class="w-12 h-12 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+							</svg>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-900 mb-2">Mike Rodriguez</h3>
+						<p class="text-purple-600 mb-2">DevOps Engineer</p>
+						<p class="text-gray-600">
+							Infrastructure specialist ensuring reliable and scalable deployments.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-20 bg-blue-600 text-white">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+				<h2 class="text-3xl font-bold mb-4">Ready to Work Together?</h2>
+				<p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+					Let's discuss your project and see how we can help you achieve your goals.
+				</p>
+				<a href="/contact" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block">
+					Get In Touch
+				</a>
+			</div>
+		</section>
+	</main>
+	
+	<Footer />
+</Layout>
