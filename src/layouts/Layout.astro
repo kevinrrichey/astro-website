@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 export interface Props {
 	title?: string;
 	description?: string;
@@ -21,7 +23,3 @@ const { title = "Astro Website", description = "A modern website built with Astr
 		<slot />
 	</body>
 </html>
-
-<style>
-	@import '../styles/global.css';
-</style>
