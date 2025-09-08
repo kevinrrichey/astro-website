@@ -6,6 +6,9 @@ static_sites:
     build_command: npm ci && npm run build
     output_dir: dist
     environment_slug: node-js
+    github:
+      repo: kevinrrichey/astro-website
+      branch: main
     envs:
       - key: NODE_VERSION
         value: "18"
