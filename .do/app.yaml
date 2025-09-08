@@ -1,0 +1,14 @@
+name: astro-website
+region: nyc
+static_sites:
+  - name: astro-website
+    build_command: npm ci && npm run build
+    output_dir: dist
+    environment_slug: node-js
+    envs:
+      - key: NODE_VERSION
+        value: "18"
+        scope: BUILD_TIME
+    routes:
+      - path: /
+
