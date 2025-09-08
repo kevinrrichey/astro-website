@@ -218,3 +218,4 @@ Your modern, fast, and SEO-optimized website is now live!
 ---
 
 *Need help? Check the [Astro Documentation](https://docs.astro.build/) or [DigitalOcean App Platform Guide](https://docs.digitalocean.com/products/app-platform/)*
+
