@@ -1,36 +1,29 @@
-name: Deploy to DigitalOcean App Platform
-
+name: Deploy Astro Site to DigitalOcean App Platform
 on:
   push:
     branches: ["main"]
   workflow_dispatch: {}
-
+permissions:
+  contents: read
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
-
       - name: Install dependencies
         run: npm ci
-
+      - name: Cache bust
+        run: echo "Build: $GITHUB_SHA" > public/cache-bust.txt
       - name: Build
         run: npm run build
-
       - name: Install doctl
         uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
-
       - name: Deploy to DigitalOcean App Platform
-        run: doctl apps update ${{ secrets.DO_APP_ID }} --spec .do/app.yaml
-
+        run: doctl apps update ${{ secrets.DO_APP_ID }} --spec .do/app.yaml --force-rebuild

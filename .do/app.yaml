@@ -9,10 +9,10 @@ static_sites:
     github:
       repo: kevinrrichey/astro-website
       branch: main
+      deploy_on_push: true  # Added to ensure push triggers deployment
     envs:
       - key: NODE_VERSION
         value: "18"
         scope: BUILD_TIME
     routes:
       - path: /
-
